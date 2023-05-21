@@ -1,4 +1,4 @@
-#include "Oyun.h"
+#include "Game.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -14,6 +14,7 @@ Game newGame(Colony *colonies,int coloniCounts)
     this->Avengers = coloniCounts;
     this->WriteColonies = &WriteColonies;
     this->DeleteColonies =&DeleteColonies;
+    this->printTheWinner = &printTheWinner;
     return this;
 }
 void ColonyWar(const Game this)
@@ -143,6 +144,20 @@ void WriteColonies (const Game this)
             printf("%s \n", str);
             free(str);
         }
+}
+void printTheWinner(const Game this)
+{
+    for (int i = 0; i < this->colonyCounts; i++)
+    {
+        if (this->colonies[i]->isAlive)
+        {
+            
+            printf("\n\nThe Winning Colony : %c", this->colonies[i]->symbol);
+           
+        }
+        
+    }
+    
 }
 // kolonileri bellekten temizleme
 void DeleteColonies(const Game this)

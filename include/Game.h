@@ -7,10 +7,10 @@
 * @author       Osman Tahir Özdemir osman.ozdemir3@ogr.sakarya.edu.tr
 */
 
-#ifndef OYUN_H
-#define OYUN_H
+#ifndef GAME_H
+#define GAME_H
 
-#include "Koloni.h"
+#include "Colony.h" 
 
 
 struct GAME
@@ -21,6 +21,7 @@ struct GAME
     void (*EndofTourOperations) ( struct GAME *) ;
     void (*WriteColonies) ( struct GAME *) ;
      void (*DeleteColonies) ( struct GAME *) ;
+     void (*printTheWinner)(struct GAME *);
     int Avengers;
     int colonyCounts;
 };
@@ -32,6 +33,7 @@ void ColonyWar(const Game);
 void EndofTourOperations( const Game);
 void WriteColonies(const Game);
 void DeleteColonies(const Game);
+void printTheWinner(const Game);
 
 
 

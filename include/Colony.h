@@ -7,13 +7,13 @@
 * @author       Osman Tahir Özdemir osman.ozdemir3@ogr.sakarya.edu.tr
 */
 
-#ifndef KOLONI_H
-#define KOLONI_H
+#ifndef COLONY_H
+#define COLONY_H
 
-#include "ATaktik.h"
-#include "BTaktik.h"
-#include "AUretim.h"
-#include "BUretim.h"
+#include "ProductionA.h"
+#include "ProductionB.h"
+#include "StrategyA.h"
+#include "StrategyB.h"
 
 
 #include "stdio.h"

@@ -1,4 +1,4 @@
-#include "Koloni.h"
+#include "Colony.h"
 #include <stdlib.h>
 
 

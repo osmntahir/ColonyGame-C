@@ -8,9 +8,9 @@
 */
 
 
-#include "Koloni.h"
-#include "Oyun.h"
-#include "RandomSembol.h"
+#include "Colony.h"
+#include "Game.h"
+#include "RandomSymbol.h"
 #include <time.h>
 
 int main()
@@ -27,8 +27,7 @@ int main()
         int size = 0;     // Dizinin mevcut boyutu
         int *populasyonlar = (int *)malloc(capacity * sizeof(int)); // Dinamik dizi oluşturulması
 
-        printf("-- Sayilari boslukla ayirarak girin (Son sayidan hemen sonra enter a basiniz):\n\n");
-
+       printf("-- Enter the numbers separated by spaces (Press enter immediately after the last number):\n\n");
         // Sayıları okuma ve dinamik diziye ekleme işlemi
         while (1) {
             int num;
@@ -71,8 +70,7 @@ int main()
 
         Game game = newGame(colonies, size);
 
-        printf("%-14s %-19s %-19s %-19s %-19s\n", "koloni", "populasyon", "yemekstogu", "kazanma", "kaybetme");
-    
+         printf("%-14s %-19s %-19s %-19s %-19s\n", "colony", "population", "food supply", "  wins", "losses");
        // koloni yazdir
              game->WriteColonies(game);
 
@@ -83,12 +81,13 @@ int main()
             
             printf("\n\n");
             tourCounts++;
-            printf("tur sayisi : %d \n", tourCounts);
-            printf("%-14s %-19s %-19s %-19s %-19s\n", "koloni", "populasyon", "yemekstogu", "kazanma", "kaybetme");
+            printf("number of tours: %d \n", tourCounts);
+            printf("%-14s %-19s %-19s %-19s %-19s\n", "colony", "population", "food supply", "  wins", "losses");
             
              game->WriteColonies(game);
             } while (game->Avengers > 1);
-
+  
+    game->printTheWinner(game);
     // kolonileri silme (bellek iadesi)
   //  game->DeleteColonies(game);
     printf("\n\n");

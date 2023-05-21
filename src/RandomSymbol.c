@@ -1,4 +1,4 @@
-#include "RandomSembol.h"
+#include "RandomSymbol.h"
 
 RandomNumber *random_number_create() {
     RandomNumber *rn = (RandomNumber *)malloc(sizeof(RandomNumber));

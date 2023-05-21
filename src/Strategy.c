@@ -1,4 +1,4 @@
-#include "Taktik.h"
+#include "Strategy.h"
 
 Strategy newStrategy()
 {

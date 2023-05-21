@@ -7,8 +7,8 @@
 * @author       Osman Tahir Özdemir osman.ozdemir3@ogr.sakarya.edu.tr
 */
 
-#ifndef TAKTIK_H
-#define TAKTIK_H
+#ifndef STRATEGY_H
+#define STRATEGY_H
 
 #include <stdlib.h>
 

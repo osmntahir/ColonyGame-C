@@ -8,13 +8,11 @@
 */
 
 
-#ifndef BTAKTIK_H
-#define BTAKTIK_H
+#ifndef STRATEGYB_H
+#define STRATEGYB_H
 
 
-
-
-#include "Taktik.h" 
+#include  "Strategy.h"
 
 struct STRATEGY_B
 {

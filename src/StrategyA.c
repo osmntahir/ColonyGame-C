@@ -1,4 +1,4 @@
-#include "ATaktik.h"
+#include "StrategyA.h"
 
 
 StrategyA newStrategyA()

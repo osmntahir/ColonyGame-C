@@ -7,9 +7,9 @@
 * @author       Osman Tahir Özdemir osman.ozdemir3@ogr.sakarya.edu.tr
 */
 
-#ifndef URETIM_H
+#ifndef PRODUCTION_H
 
-#define URETIM_H
+#define PRODUCTION_H
 
 
 
