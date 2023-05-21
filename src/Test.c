@@ -97,7 +97,7 @@ int main()
     free(game);
     free(populasyonlar);
 
-    printf("Devam etmek istiyor musunuz (e/h) ? ");
+    printf("Do you want to contiune (e/h) ? ");
     char choose;
     scanf(" %c", &choose);
     if (choose == 'H' || choose == 'h') {
