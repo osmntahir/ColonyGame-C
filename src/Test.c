@@ -51,7 +51,7 @@ int main()
 
         }
 
-        printf("Girilen sayilar: ");
+       printf("Entered numbers: ");
         for (int i = 0; i < size; i++) {
             printf("%d ", populasyonlar[i]);
         }
